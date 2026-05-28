@@ -11,7 +11,8 @@ A TypeScript-based centralized exchange (CEX) platform with a distributed archit
   - Secure password hashing with bcrypt
 
 ### 📦 Tech Stack
-- **Runtime**: TypeScript
+- **Runtime**: Bun
+- **Language**: TypeScript
 - **Validation**: Zod
 - **Database**: Prisma + Neon DB
 - **Message Queue**: Redis
@@ -20,14 +21,14 @@ A TypeScript-based centralized exchange (CEX) platform with a distributed archit
 ## Getting Started
 
 ### Prerequisites
-- Node.js
+- Bun
 - Redis
 - Neon Database
 
 ### Installation
 
 ```bash
-npm install
+bun install
 ```
 
 ### Environment Setup
@@ -42,7 +43,7 @@ JWT_SECRET=your-secret-key
 ### Development
 
 ```bash
-npm run dev
+bun run dev
 ```
 
 ## Architecture
@@ -57,14 +58,6 @@ npm run dev
       │
    Clients
 ```
-
-## Roadmap
-
-- [ ] Order matching engine
-- [ ] WebSocket support
-- [ ] Trading pairs management
-- [ ] Market data aggregation
-- [ ] Risk management & compliance
 
 ## License
 
